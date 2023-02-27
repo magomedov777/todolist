@@ -14,6 +14,14 @@ type TasksType = {
     isDone: Boolean
 }
 
+{props.tasks.map((el) => {
+    return  <li>
+        <input type="checkbox" checked={el.isDone}/> 
+        <span>{el.title}</span>
+        </li>
+
+})}
+
 const Todo = (props: PropsType) => {
     return(
         <div>
