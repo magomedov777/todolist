@@ -1,6 +1,7 @@
 import React from "react";
 
 
+// Props types example =====================>>>>>>>
 
 type PropsType = {
     headTitle: string,
