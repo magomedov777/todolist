@@ -20,13 +20,7 @@ function App() {
         <div className="App">
             <Todo headTitle={new1} body={'body'} tasks={tasks1}/>
             <Todo headTitle={back1} body={'body'} tasks={tasks2}/>
-            <Todo headTitle={back1} body={'body'} tasks={tasks2}/>
-            <Todo headTitle={back1} body={'body'} tasks={tasks2}/>
-            <Todo headTitle={back1} body={'body'} tasks={tasks2}/>
-            <Todo headTitle={back1} body={'body'} tasks={tasks2}/>
-
             
-
         </div>
     );
 }
