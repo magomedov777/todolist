@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-type TaskType = {
+type TaskType = {                          //типизация пропсов
     id: number
     title: string
     isDone: boolean
