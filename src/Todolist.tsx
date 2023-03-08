@@ -17,7 +17,7 @@ let[filterValue, setFilterValue] = useState('All')          //используе
                                                             //определения значения по умолчанию для списка тасок
 
 const filterTask = (buttonName: string) => {
-         setFilterValue(buttonName)}
+         setFilterValue(buttonName)}             //фильтрация по имени кнопки
 
 let filteredTask = props.tasks
     
