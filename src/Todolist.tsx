@@ -19,7 +19,7 @@ let[filterValue, setFilterValue] = useState('All')          //используе
 const filterTask = (buttonName: string) => {
          setFilterValue(buttonName)}             //фильтрация по имени кнопки
 
-let filteredTask = props.tasks
+let filteredTask = props.tasks                //присваиваем значение filteredTask из props.tasks
     
 if(filterValue === 'Active'){filteredTask = props.tasks.filter((el)=>!el.isDone)}
 if(filterValue === 'Completed'){filteredTask = props.tasks.filter((el)=>el.isDone)}
