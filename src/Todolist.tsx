@@ -6,7 +6,7 @@ type TaskType = {                          //типизация пропсов
     isDone: boolean
 }
 
-type PropsType = {
+type PropsType = {                           //типизация пропсов
     title: string
     tasks: Array<TaskType>
     removeTask: (taskID: number) => void
