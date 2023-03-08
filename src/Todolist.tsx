@@ -26,7 +26,7 @@ if(filterValue === 'Completed'){filteredTask = props.tasks.filter((el)=>el.isDon
     
     return (
        <div>
-        <h3>{props.title}</h3>
+        <h3>{props.title}</h3>           
          <div>
           <input/>
            <button>+</button>
@@ -40,10 +40,11 @@ if(filterValue === 'Completed'){filteredTask = props.tasks.filter((el)=>el.isDon
                         <span>{el.title}</span></li>})}
             </ul>
               <div>
-               <button onClick={()=> filterTask('All')}>All</button>
+               <button onClick={()=> filterTask('All')}>All</button>               
                <button onClick={()=> filterTask('Active')}>Active</button>
                <button onClick={()=> filterTask('Completed')}>Completed</button>
               </div>
             </div>)};
 
 export default Todolist;
+                                           //передаем callback function в обработчик событий, по имени кнопки
