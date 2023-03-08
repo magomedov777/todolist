@@ -12,7 +12,7 @@ type PropsType = {                           //типизация пропсов
     removeTask: (taskID: number) => void
 }   
 
-function Todolist(props: PropsType){
+function Todolist(props: PropsType){                             //передаем типизированные пропсы
 let[filterValue, setFilterValue] = useState('All')
 
 const filterTask = (buttonName: string) => {
