@@ -10,7 +10,7 @@ let[tasks1, setTasks] = useState([
         { id: 3, title: "ReactJS", isDone: false }
     ])
 
-const removeTask = (taskID: number) => {
+const removeTask = (taskID: number) => {                              //передаем id тасок в параметрах функции
         setTasks(tasks1.filter((el) => el.id !== taskID))}
     return (
         <div className="App">
