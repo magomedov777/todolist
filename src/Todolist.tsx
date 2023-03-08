@@ -21,8 +21,8 @@ const filterTask = (buttonName: string) => {
 
 let filteredTask = props.tasks                //присваиваем значение filteredTask из props.tasks
     
-if(filterValue === 'Active'){filteredTask = props.tasks.filter((el)=>!el.isDone)}
-if(filterValue === 'Completed'){filteredTask = props.tasks.filter((el)=>el.isDone)}
+if(filterValue === 'Active'){filteredTask = props.tasks.filter((el)=>!el.isDone)}         //фильтруем приходящие события
+if(filterValue === 'Completed'){filteredTask = props.tasks.filter((el)=>el.isDone)}         //по булевому значению
     
     return (
        <div>
